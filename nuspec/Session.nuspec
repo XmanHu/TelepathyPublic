@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Microsoft.Telepathy.Session</id>
+        <version>1.0.0</version>
+        <title>Microsoft Telepathy Session SDK</title>
+        <authors>Microsoft</authors>
+        <owners>microsoft,hpcpack</owners>
+        <description>Nuget package for Microsoft Telepathy SDK. 
+Microsoft Telepathy is a SOA runtime framework works in a cloud native way.
+Please visit https://github.com/Azure/Telepathy/ to read more.</description>
+        <releaseNotes></releaseNotes>
+        <projectUrl>https://github.com/Azure/Telepathy</projectUrl>
+        <license type="expression">MIT</license>
+        <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<tags>hpc;soa;azure;microsoft</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.6">
+                <dependency id="System.ValueTuple" version="4.5.0" />
+                <dependency id="WindowsAzure.Storage" version="8.4.0" />
+            </group>
+        </dependencies>
+        <references>
+            <group>
+                <reference file="Microsoft.Telepathy.Session.dll" />
+                <reference file="StandaloneDataClient.dll" />
+                <reference file="TelepathyCommon.dll" />
+                <reference file="Microsoft.Telepathy.Session.Data.dll" />
+            </group>
+        </references>
+    </metadata>
+    <files>
+        <file src="..\src\soa\SessionAPI\bin\Release\Microsoft.Telepathy.Session.dll" target="lib\net46"/>
+        <file src="..\src\soa\SessionAPI\bin\Release\StandaloneDataClient.dll" target="lib\net46"/>
+        <file src="..\src\soa\SessionAPI\bin\Release\TelepathyCommon.dll" target="lib\net46"/>
+        <file src="..\src\soa\SessionAPI\bin\Release\Microsoft.Telepathy.Session.Data.dll" target="lib\net46"/>
+    </files>
+</package>
