@@ -181,7 +181,7 @@
         "telepathyVMImageOffer": "WindowsServer",
         "telepathyVMOSDiskName": "telepathyVMOSDisk",
         "telepathyVMVmSize": "[parameters('telepathyVMSize')]",
-        "customScriptLocation": "[concat('https://raw.githubusercontent.com/Azure/Telepathy/', parameters('telepathyBranch'), '/deploy/StartTelepathyShim.ps1')]",
+        "customScriptLocation": "[concat('https://raw.githubusercontent.com/Xmanhu/TelepathyPublic/', parameters('telepathyBranch'), '/deploy/StartTelepathyShim.ps1')]",
         "doubleQuotation": "\"",
         "caret": "^",
         "scriptParameters": "[concat('EnableTelepathyStorage=$true;','StartTelepathyService=$true;', 'Location=', resourceGroup().location, ';BatchAccountName=', parameters('batchAccountsName'),';BatchPoolName=', parameters('batchAccountsPoolName'), ';ArtifactsFolderName=', parameters('nightlyBuildVersion'), ';ContainerName=', parameters('nightlyBuildStorageContainerName'), ';SrcStorageAccountName=', parameters('nightlyBuildStorageName'))]"
@@ -194,7 +194,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/Azure/Telepathy/dev/deploy/azuredeploy.json"
+                    "uri": "https://raw.githubusercontent.com/Xmanhu/TelepathyPublic/dev/deploy/azuredeploy.json"
                 },
                 "parameters": {
                     "telepathyStorageType": {

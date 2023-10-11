@@ -94,7 +94,7 @@ $releaseDeploy = [bool]$HashParams["ReleaseDeploy"]
 if ($releaseDeploy) {
     Write-Host "Release deploy start"
     Write-Log -Message "Release deploy start"
-    $url = "https://github.com/Azure/Telepathy/releases/$($HashParams["TelepathyVersion"])/download/Telepathy.zip"
+    $url = "https://github.com/Xmanhu/TelepathyPublic/releases/$($HashParams["TelepathyVersion"])/download/Telepathy.zip"
     Write-Host $url
     Write-Log -Message "Download relase version is $($HashParams["TelepathyVersion"])"
     $wc = New-Object System.Net.WebClient
